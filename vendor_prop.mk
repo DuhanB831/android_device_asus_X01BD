@@ -240,3 +240,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ZRAM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.qti.config.zram=true
+    
+#HAL1
+vendor.camera.hal1.packagelist=com.whatsapp, com.instagram.android
