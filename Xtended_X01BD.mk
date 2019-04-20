@@ -19,14 +19,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common lineage stuff
-$(call inherit-product, vendor/viper/config/common_full_phone.mk)
+# Inherit some common xtended stuff
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := viper_X01BD
+PRODUCT_NAME := xtended_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M2
@@ -48,5 +48,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "Xiaomi/jason/jason:7.1.1/NMF26X/V9.6.2.0.NCHMIFD:user/release-keys"
 
-# Its Official ViperOS
-VIPER_BUILD_TYPE := OFFICIAL
+
+
