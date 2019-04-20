@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/viper_X01BD.mk
+    $(LOCAL_DIR)/xtended_X01BD.mk
